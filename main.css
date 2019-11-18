@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 10px;
+  color: #262626;
+  font-weight: 100;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exchangeRate,
+.currencyConverter {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exchangeRate>h1,
+.currencyConverter>h1 {
+  flex-basis: 100%;
+  text-align: center;
+  color: #012f57;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+/*exchangeRate*/
+
+.exchangeRate__table {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.exchangeRate__table tr {
+  background-color: rgb(240, 240, 240);
+}
+
+.exchangeRate__table td,
+.exchangeRate__table th {
+  width: 33.33%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-weight: 100;
+}
+
+.exchangeRate__table th {
+  background-color: #012f57;
+  color: #ffffff;
+}
+
+/*currencyConverter*/
+.currencyConverter {
+  align-content: flex-start;
+}
+
+.formCurrencyConverter {
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.formCurrencyConverter>* {
+  flex-basis: 100%;
+  border: 1px solid rgb(240, 240, 240);
+}
+
+.formCurrencyConverter p {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 3px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #012f57;
+  text-align: center;
+}
+
+.formCurrencyConverter__value {
+  padding: 3px;
+  text-align: center;
+
+}
+
+.formCurrencyConverter__btn {
+  background-color: #012f57;
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.formCurrencyConverter__btn:hover {
+  background-color: #01213d;
+}
+
+.formCurrencyConverter__MyCurrency,
+.formCurrencyConverter__WantCurrency,
+.formCurrencyConverter__value {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  color: #262626;
+  font-weight: 100;
+}
+
+.formCurrencyConverter__result {
+  padding-top: 10px;
+  color: #01213d;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  border: none;
+
+}
+
+
+
+
+@media (max-width: 800px) {
+
+  .exchangeRate,
+  .currencyConverter {
+    flex-basis: 100%;
+  }
+}

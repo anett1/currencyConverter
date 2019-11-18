@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik:100,300,400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="exchangeRate">
+      <h1>Kurs walut <span></span></h1>
+      <table class="exchangeRate__table">
+        <thead>
+          <tr>
+            <th>Kod</th>
+            <th>Nazwa</th>
+            <th>Średni kurs</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="currencyConverter">
+      <h1>Przelicznik walut</h1>
+      <form class="formCurrencyConverter">
+        <p>Wartość:</p><br>
+        <input type="text" class="formCurrencyConverter__value" />
+        <p>Mam:</p><br>
+        <select name="MyCurrency" class="formCurrencyConverter__MyCurrency">
+          <option data-code="PLN" value="1">PLN Polska</option>
+        </select>
+        <p>Chcę otrzymać:</p><br>
+        <select name="WantCurrency" class="formCurrencyConverter__WantCurrency">
+          <option data-code="PLN" value="1" id="PLN">PLN Polska</option>
+        </select>
+        <button class="formCurrencyConverter__btn">przelicz</button>
+        <div class="formCurrencyConverter__result"></div>
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
